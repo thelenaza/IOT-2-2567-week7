@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs') %>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="fw-bold text-secondary">Edit Posts</h2>
+                    <a href="http://" class="btn btn-danger btn-sm">BACK</a>
+                </div>
+                <div class="card-body">
+                    <form action="" method="post">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" name="title" id="title" placeholder="title" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea name="content" class="form-control" id="content" rows="5" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image</label>
+                            <input type="file" class="form-control" name="image" id="image" placeholder="image" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Update Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer') %>
